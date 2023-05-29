@@ -8,7 +8,14 @@ namespace Formulario_Principal.Models
 {
     public class Bilhete
     {
-        string Lugar;
-        bool Estado;
+        public int Id;
+        public string Lugar;
+        public bool Estado;
+
+        public Bilhete(string lugar, bool estado)
+        {
+            this.Lugar = lugar;
+            this.Estado = estado;
+        }
     }
 }

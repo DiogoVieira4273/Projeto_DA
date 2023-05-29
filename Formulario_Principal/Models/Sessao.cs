@@ -8,7 +8,14 @@ namespace Formulario_Principal.Models
 {
     public class Sessao
     {
-        DateTime DataHora;
-        decimal Preco;
+        public int Id;
+        public DateTime DataHora;
+        public decimal Preco;
+
+        public Sessao(DateTime dataHora, decimal preco)
+        {
+            this.DataHora = dataHora;
+            this.Preco = preco;
+        }
     }
 }

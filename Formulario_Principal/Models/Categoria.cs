@@ -9,7 +9,14 @@ namespace Formulario_Principal.Models
 {
     public class Categoria
     {
-        string Nome;
-        bool Activa;
+        public int id;
+        public string Nome;
+        public bool Activa;
+
+        public Categoria(string nome, bool activa) 
+        {
+            this.Nome = nome;
+            this.Activa = activa;
+        }
     }
 }

@@ -8,8 +8,16 @@ namespace Formulario_Principal.Models
 {
     public class Cinema
     {
-        string Nome;
-        string Morada;
-        string Email;
+        public int Id;
+        public string Nome;
+        public string Morada;
+        public string Email;
+
+        public Cinema(string nome, string morada, string email)
+        {
+            this.Nome = nome;
+            this.Morada = morada;
+            this.Email = email;
+        }
     }
 }

@@ -8,8 +8,9 @@ namespace Formulario_Principal.Models
 {
     public class Funcionario : Pessoa
     {
-        decimal Salario; 
-        string Funcao;
+        public int Id;
+        public decimal Salario; 
+        public string Funcao;
 
         public Funcionario(string nome, string morada, decimal salario, string funcao) : base(nome, morada)
         {

@@ -8,9 +8,18 @@ namespace Formulario_Principal.Models
 {
     public class Sala
     {
-        string Nome;
-        int Colunas;
-        int Filas;
-        Cinema Cinema;
+        public int Id;
+        public string Nome;
+        public int Colunas;
+        public int Filas;
+        public Cinema Cinema;
+
+        public Sala(string nome, int colunas, int filas, Cinema cinema) 
+        {
+            this.Nome = nome;
+            this.Colunas = colunas;
+            this.Filas = filas;
+            this.Cinema = cinema;
+        }
     }
 }

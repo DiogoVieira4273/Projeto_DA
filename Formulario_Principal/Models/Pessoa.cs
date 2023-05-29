@@ -8,13 +8,14 @@ namespace Formulario_Principal.Models
 {
     public class Pessoa
     {
-        string Nome;
-        string Morada;
+        public int Id;
+        public string Nome;
+        public string Morada;
 
-        public Pessoa(string Nome, string Morada)
+        public Pessoa(string nome, string morada)
         {
-            this.Nome = Nome;
-            this.Morada = Morada;
+            this.Nome = nome;
+            this.Morada = morada;
         }
     }
 }
