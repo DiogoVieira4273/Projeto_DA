@@ -11,5 +11,6 @@ namespace Formulario_Principal.Models
         string Nome;
         DateTime Duracao;
         bool Activo;
+        Categoria Categoria;
     }
 }

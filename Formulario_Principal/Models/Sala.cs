@@ -11,5 +11,6 @@ namespace Formulario_Principal.Models
         string Nome;
         int Colunas;
         int Filas;
+        Cinema Cinema;
     }
 }

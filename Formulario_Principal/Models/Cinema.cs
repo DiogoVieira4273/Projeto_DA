@@ -9,9 +9,7 @@ namespace Formulario_Principal.Models
     public class Cinema
     {
         string Nome;
-        int NIF;
         string Morada;
-
-        public Pessoa
+        string Email;
     }
 }
