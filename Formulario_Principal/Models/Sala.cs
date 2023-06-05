@@ -8,7 +8,7 @@ namespace Formulario_Principal.Models
 {
     public class Sala
     {
-        public int Id;
+        public int id;
         public string Nome;
         public int Colunas;
         public int Filas;

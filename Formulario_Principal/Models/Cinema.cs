@@ -8,7 +8,7 @@ namespace Formulario_Principal.Models
 {
     public class Cinema
     {
-        public int Id;
+        public int id;
         public string Nome;
         public string Morada;
         public string Email;

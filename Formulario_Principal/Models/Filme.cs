@@ -8,17 +8,16 @@ namespace Formulario_Principal.Models
 {
     public class Filme
     {
-        public int Id;
+        public int id;
         public string Nome;
         public DateTime Duracao;
         public bool Activo;
         public Categoria Categoria;
 
-        public Filme(string nome, DateTime duracao, bool activo, Categoria categoria) 
+        public Filme(string nome, DateTime duracao, Categoria categoria) 
         {
             this.Nome = nome;
             this.Duracao = duracao;
-            this.Activo = activo;
             this.Categoria = categoria;
         }
     }

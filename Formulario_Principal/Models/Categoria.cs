@@ -13,10 +13,11 @@ namespace Formulario_Principal.Models
         public string Nome;
         public bool Activa;
 
-        public Categoria(string nome, bool activa) 
+        public Categoria(string nome) 
         {
             this.Nome = nome;
-            this.Activa = activa;
         }
+
+
     }
 }

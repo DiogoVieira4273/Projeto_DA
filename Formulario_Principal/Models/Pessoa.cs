@@ -8,7 +8,7 @@ namespace Formulario_Principal.Models
 {
     public class Pessoa
     {
-        public int Id;
+        public int id;
         public string Nome;
         public string Morada;
 

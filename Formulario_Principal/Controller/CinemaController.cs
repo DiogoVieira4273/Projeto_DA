@@ -31,21 +31,21 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public void AddFilme(string nome, DateTime duracao, bool activo, Categoria categoria)
+        public void AddFilme(string nome, DateTime duracao, Categoria categoria)
         {
             using (var db = new CinemaDbContext()) 
             { 
-                var filme = new Filme (nome, duracao, activo, categoria); 
+                var filme = new Filme (nome, duracao, categoria); 
                 db.Filme.Add(filme); 
                 db.SaveChanges();
             }
         }
 
-        public void AddCategoria(string nome, bool activa)
+        public void AddCategoria(string nome)
         {
             using (var db = new CinemaDbContext()) 
             { 
-                var categoria = new Categoria (nome, activa); 
+                var categoria = new Categoria(nome); 
                 db.Categoria.Add(categoria); 
                 db.SaveChanges();
             }
@@ -81,11 +81,11 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public void AddBilhete(string lugar, bool estado)
+        public void AddBilhete(string lugar)
         {
             using (var db = new CinemaDbContext()) 
             { 
-                var bilhete = new Bilhete (lugar, estado); 
+                var bilhete = new Bilhete (lugar); 
                 db.Bilhete.Add(bilhete); 
                 db.SaveChanges();
             }

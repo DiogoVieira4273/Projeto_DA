@@ -8,7 +8,7 @@ namespace Formulario_Principal.Models
 {
     public class Sessao
     {
-        public int Id;
+        public int id;
         public DateTime DataHora;
         public decimal Preco;
 
