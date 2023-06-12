@@ -81,6 +81,12 @@
     <Compile Include="Views\Formulario_Atendimento.Designer.cs">
       <DependentUpon>Formulario_Atendimento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Formulario_Categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Formulario_Categorias.Designer.cs">
+      <DependentUpon>Formulario_Categorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Formulario_Cinema.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,12 @@
     <Compile Include="Views\Formulario_Funcionarios.Designer.cs">
       <DependentUpon>Formulario_Funcionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Formulario_Sala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Formulario_Sala.Designer.cs">
+      <DependentUpon>Formulario_Sala.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Formulario_Sessoes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +135,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Formulario_Categorias.resx">
+      <DependentUpon>Formulario_Categorias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Formulario_Cinema.resx">
       <DependentUpon>Formulario_Cinema.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Formulario_Funcionarios.resx">
       <DependentUpon>Formulario_Funcionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Formulario_Sala.resx">
+      <DependentUpon>Formulario_Sala.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
