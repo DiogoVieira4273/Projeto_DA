@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Formulario_Principal.Controller;
+using Formulario_Principal.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,16 @@ namespace Formulario_Principal.Views
         public Formulario_Cinema()
         {
             InitializeComponent();
+        }
+
+        private void btnAlterarCinema_Click(object sender, EventArgs e)
+        {
+            CinemaController.UpdateCinema();
+        }
+
+        private void btnRemoverCinema_Click(object sender, EventArgs e)
+        {
+            CinemaController.RemoveCinema();
         }
     }
 }

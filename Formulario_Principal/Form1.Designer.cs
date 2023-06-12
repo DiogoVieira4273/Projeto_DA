@@ -30,7 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cinemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.filmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filmesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sessõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,8 +40,11 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtMorada = new System.Windows.Forms.TextBox();
-            this.btnAlterar = new System.Windows.Forms.Button();
-            this.listBoxSessão = new System.Windows.Forms.ListBox();
+            this.listBoxSessao = new System.Windows.Forms.ListBox();
+            this.listBoxFuncionario = new System.Windows.Forms.ListBox();
+            this.btnAdicionarCinema = new System.Windows.Forms.Button();
+            this.btnObterFuncionarios = new System.Windows.Forms.Button();
+            this.btnObterSessao = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +52,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cinemaToolStripMenuItem,
-            this.filmToolStripMenuItem,
+            this.filmesToolStripMenuItem,
             this.clientesToolStripMenuItem,
             this.sessõesToolStripMenuItem,
             this.funcionáriosToolStripMenuItem});
@@ -64,30 +67,35 @@
             this.cinemaToolStripMenuItem.Name = "cinemaToolStripMenuItem";
             this.cinemaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.cinemaToolStripMenuItem.Text = "Cinema";
+            this.cinemaToolStripMenuItem.Click += new System.EventHandler(this.cinemaToolStripMenuItem_Click);
             // 
-            // filmToolStripMenuItem
+            // filmesToolStripMenuItem
             // 
-            this.filmToolStripMenuItem.Name = "filmToolStripMenuItem";
-            this.filmToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.filmToolStripMenuItem.Text = "Filmes";
+            this.filmesToolStripMenuItem.Name = "filmesToolStripMenuItem";
+            this.filmesToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.filmesToolStripMenuItem.Text = "Filmes";
+            this.filmesToolStripMenuItem.Click += new System.EventHandler(this.filmesToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // sessõesToolStripMenuItem
             // 
             this.sessõesToolStripMenuItem.Name = "sessõesToolStripMenuItem";
             this.sessõesToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.sessõesToolStripMenuItem.Text = "Sessões";
+            this.sessõesToolStripMenuItem.Click += new System.EventHandler(this.sessõesToolStripMenuItem_Click);
             // 
             // funcionáriosToolStripMenuItem
             // 
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
             this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.funcionáriosToolStripMenuItem.Text = "Funcionários";
+            this.funcionáriosToolStripMenuItem.Click += new System.EventHandler(this.funcionáriosToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -137,30 +145,62 @@
             this.txtMorada.Size = new System.Drawing.Size(100, 20);
             this.txtMorada.TabIndex = 6;
             // 
-            // btnAlterar
+            // listBoxSessao
             // 
-            this.btnAlterar.Location = new System.Drawing.Point(356, 185);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterar.TabIndex = 7;
-            this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.listBoxSessao.FormattingEnabled = true;
+            this.listBoxSessao.Location = new System.Drawing.Point(12, 27);
+            this.listBoxSessao.Name = "listBoxSessao";
+            this.listBoxSessao.Size = new System.Drawing.Size(156, 134);
+            this.listBoxSessao.TabIndex = 8;
             // 
-            // listBoxSessão
+            // listBoxFuncionario
             // 
-            this.listBoxSessão.FormattingEnabled = true;
-            this.listBoxSessão.Location = new System.Drawing.Point(12, 46);
-            this.listBoxSessão.Name = "listBoxSessão";
-            this.listBoxSessão.Size = new System.Drawing.Size(156, 134);
-            this.listBoxSessão.TabIndex = 8;
+            this.listBoxFuncionario.FormattingEnabled = true;
+            this.listBoxFuncionario.Location = new System.Drawing.Point(12, 234);
+            this.listBoxFuncionario.Name = "listBoxFuncionario";
+            this.listBoxFuncionario.Size = new System.Drawing.Size(156, 134);
+            this.listBoxFuncionario.TabIndex = 9;
+            // 
+            // btnAdicionarCinema
+            // 
+            this.btnAdicionarCinema.Location = new System.Drawing.Point(342, 188);
+            this.btnAdicionarCinema.Name = "btnAdicionarCinema";
+            this.btnAdicionarCinema.Size = new System.Drawing.Size(122, 26);
+            this.btnAdicionarCinema.TabIndex = 7;
+            this.btnAdicionarCinema.Text = "Adicionar Cinema";
+            this.btnAdicionarCinema.UseVisualStyleBackColor = true;
+            this.btnAdicionarCinema.Click += new System.EventHandler(this.btnAdicionarCinema_Click);
+            // 
+            // btnObterFuncionarios
+            // 
+            this.btnObterFuncionarios.Location = new System.Drawing.Point(34, 386);
+            this.btnObterFuncionarios.Name = "btnObterFuncionarios";
+            this.btnObterFuncionarios.Size = new System.Drawing.Size(122, 26);
+            this.btnObterFuncionarios.TabIndex = 10;
+            this.btnObterFuncionarios.Text = "Obter Funcionarios";
+            this.btnObterFuncionarios.UseVisualStyleBackColor = true;
+            this.btnObterFuncionarios.Click += new System.EventHandler(this.btnObterFuncionarios_Click);
+            // 
+            // btnObterSessao
+            // 
+            this.btnObterSessao.Location = new System.Drawing.Point(34, 167);
+            this.btnObterSessao.Name = "btnObterSessao";
+            this.btnObterSessao.Size = new System.Drawing.Size(122, 26);
+            this.btnObterSessao.TabIndex = 11;
+            this.btnObterSessao.Text = "Obter Sessao";
+            this.btnObterSessao.UseVisualStyleBackColor = true;
+            this.btnObterSessao.Click += new System.EventHandler(this.btnObterSessao_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBoxSessão);
-            this.Controls.Add(this.btnAlterar);
+            this.Controls.Add(this.btnObterSessao);
+            this.Controls.Add(this.btnObterFuncionarios);
+            this.Controls.Add(this.listBoxFuncionario);
+            this.Controls.Add(this.listBoxSessao);
+            this.Controls.Add(this.btnAdicionarCinema);
             this.Controls.Add(this.txtMorada);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNome);
@@ -182,7 +222,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cinemaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem filmToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem filmesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sessõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem funcionáriosToolStripMenuItem;
@@ -192,8 +232,11 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtMorada;
-        private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.ListBox listBoxSessão;
+        private System.Windows.Forms.ListBox listBoxSessao;
+        private System.Windows.Forms.ListBox listBoxFuncionario;
+        private System.Windows.Forms.Button btnAdicionarCinema;
+        private System.Windows.Forms.Button btnObterFuncionarios;
+        private System.Windows.Forms.Button btnObterSessao;
     }
 }
 

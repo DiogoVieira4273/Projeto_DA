@@ -99,6 +99,12 @@
     <Compile Include="Views\Formulario_Filmes.Designer.cs">
       <DependentUpon>Formulario_Filmes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Formulario_Funcionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Formulario_Funcionarios.Designer.cs">
+      <DependentUpon>Formulario_Funcionarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Formulario_Sessoes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,15 @@
     </Compile>
     <EmbeddedResource Include="Views\Formulario_Cinema.resx">
       <DependentUpon>Formulario_Cinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Formulario_Clientes.resx">
+      <DependentUpon>Formulario_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Formulario_Filmes.resx">
+      <DependentUpon>Formulario_Filmes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Formulario_Funcionarios.resx">
+      <DependentUpon>Formulario_Funcionarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
