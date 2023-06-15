@@ -17,6 +17,9 @@ namespace Formulario_Principal.Models
             this.Lugar = lugar;
         }
 
-
+        public override string ToString()
+        {
+            return "" + this.Lugar + "".ToString();
+        }
     }
 }

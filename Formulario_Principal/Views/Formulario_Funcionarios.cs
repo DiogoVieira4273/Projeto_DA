@@ -22,17 +22,17 @@ namespace Formulario_Principal.Views
 
         private void btnAdicionarFuncionario_Click(object sender, EventArgs e)
         {
-            CinemaController.AddFuncionario(tbNome.Text,tbMorada.Text,decimal.Parse(tbSalario.Text),tbFuncao.Text);
+            CinemaController.AddFuncionario(tbNome.Text, tbMorada.Text, decimal.Parse(tbSalario.Text), tbFuncao.Text);
         }
 
         private void btnAlterarFuncionario_Click(object sender, EventArgs e)
         {
-            CinemaController.UpdateFuncionario(Funcionario);
+            CinemaController.UpdateFuncionario();
         }
 
         private void btnRemoverFuncionario_Click(object sender, EventArgs e)
         {
-            CinemaController.RemoveFuncionario(Funcionario);
+            CinemaController.RemoveFuncionario();
         }
     }
 }

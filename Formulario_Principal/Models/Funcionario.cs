@@ -16,5 +16,10 @@ namespace Formulario_Principal.Models
             this.Salario = salario;
             this.Funcao = funcao;
         }
+
+        public override string ToString()
+        {
+            return ""+this.Nome+""+this.Morada+""+this.Salario+""+this.Funcao+"".ToString();
+        }
     }
 }

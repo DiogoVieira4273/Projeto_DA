@@ -21,5 +21,10 @@ namespace Formulario_Principal.Models
             this.Filas = filas;
             this.Cinema = cinema;
         }
+
+        public override string ToString()
+        {
+            return "" + this.Nome + "" + this.Colunas + "" + this.Filas + "" + this.Cinema + "".ToString();
+        }
     }
 }

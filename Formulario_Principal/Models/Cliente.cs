@@ -14,5 +14,10 @@ namespace Formulario_Principal.Models
         {
             this.NumeroFiscal = numeroFiscal;
         }
+
+        public override string ToString()
+        {
+            return "" + this.Nome + "" + this.Morada + "" + this.NumeroFiscal + "".ToString();
+        }
     }
 }

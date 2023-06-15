@@ -153,6 +153,9 @@
     <EmbeddedResource Include="Views\Formulario_Sala.resx">
       <DependentUpon>Formulario_Sala.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Formulario_Sessoes.resx">
+      <DependentUpon>Formulario_Sessoes.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

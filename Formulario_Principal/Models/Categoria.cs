@@ -18,6 +18,9 @@ namespace Formulario_Principal.Models
             this.Nome = nome;
         }
 
-
+        public override string ToString()
+        {
+            return "" + this.Nome + "".ToString();
+        }
     }
 }

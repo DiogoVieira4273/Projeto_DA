@@ -17,5 +17,10 @@ namespace Formulario_Principal.Models
             this.DataHora = dataHora;
             this.Preco = preco;
         }
+
+        public override string ToString()
+        {
+            return "" + this.DataHora + "" + this.Preco + "".ToString();
+        }
     }
 }
