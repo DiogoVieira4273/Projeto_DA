@@ -47,6 +47,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnRemoverFuncionario = new System.Windows.Forms.Button();
+            this.btnObterFuncionarios = new System.Windows.Forms.Button();
+            this.listBoxFuncionario = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -207,11 +209,30 @@
             this.btnRemoverFuncionario.UseVisualStyleBackColor = true;
             this.btnRemoverFuncionario.Click += new System.EventHandler(this.btnRemoverFuncionario_Click);
             // 
+            // btnObterFuncionarios
+            // 
+            this.btnObterFuncionarios.Location = new System.Drawing.Point(659, 209);
+            this.btnObterFuncionarios.Name = "btnObterFuncionarios";
+            this.btnObterFuncionarios.Size = new System.Drawing.Size(122, 26);
+            this.btnObterFuncionarios.TabIndex = 24;
+            this.btnObterFuncionarios.Text = "Obter Funcionarios";
+            this.btnObterFuncionarios.UseVisualStyleBackColor = true;
+            // 
+            // listBoxFuncionario
+            // 
+            this.listBoxFuncionario.FormattingEnabled = true;
+            this.listBoxFuncionario.Location = new System.Drawing.Point(637, 57);
+            this.listBoxFuncionario.Name = "listBoxFuncionario";
+            this.listBoxFuncionario.Size = new System.Drawing.Size(156, 134);
+            this.listBoxFuncionario.TabIndex = 23;
+            // 
             // Formulario_Funcionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnObterFuncionarios);
+            this.Controls.Add(this.listBoxFuncionario);
             this.Controls.Add(this.btnRemoverFuncionario);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
@@ -259,5 +280,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnRemoverFuncionario;
+        private System.Windows.Forms.Button btnObterFuncionarios;
+        private System.Windows.Forms.ListBox listBoxFuncionario;
     }
 }

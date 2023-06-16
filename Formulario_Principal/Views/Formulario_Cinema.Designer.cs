@@ -42,6 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.listBoxCinema = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnAlterarCinema
@@ -160,11 +161,20 @@
             this.label6.TabIndex = 22;
             this.label6.Text = "Nome";
             // 
+            // listBoxCinema
+            // 
+            this.listBoxCinema.FormattingEnabled = true;
+            this.listBoxCinema.Location = new System.Drawing.Point(608, 42);
+            this.listBoxCinema.Name = "listBoxCinema";
+            this.listBoxCinema.Size = new System.Drawing.Size(120, 95);
+            this.listBoxCinema.TabIndex = 29;
+            // 
             // Formulario_Cinema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBoxCinema);
             this.Controls.Add(this.btnRemoverCinema);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
@@ -202,5 +212,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox listBoxCinema;
     }
 }

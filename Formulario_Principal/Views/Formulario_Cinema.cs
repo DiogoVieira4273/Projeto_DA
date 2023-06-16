@@ -21,12 +21,14 @@ namespace Formulario_Principal.Views
 
         private void btnAlterarCinema_Click(object sender, EventArgs e)
         {
-            CinemaController.UpdateCinema();
+            var cinema = (Cinema)listBoxCinema.SelectedItem;
+            CinemaController.UpdateCinema(cinema);
         }
 
         private void btnRemoverCinema_Click(object sender, EventArgs e)
         {
-            CinemaController.RemoveCinema();
+            var cinema = (Cinema)listBoxCinema.SelectedItem;
+            CinemaController.RemoveCinema(cinema);
         }
     }
 }

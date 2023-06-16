@@ -11,7 +11,7 @@ namespace Formulario_Principal.Controller
 {
     public class CinemaController
     {
-        public static string AddCliente(string nome, string morada, int numeroFiscal)
+        public static void AddCliente(string nome, string morada, int numeroFiscal)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -21,7 +21,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string AddCinema(string nome, string morada, string email)
+        public static void AddCinema(string nome, string morada, string email)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -31,7 +31,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string AddFilme(string nome, DateTime duracao, Categoria categoria)
+        public static void AddFilme(string nome, DateTime duracao, Categoria categoria)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -41,7 +41,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string AddCategoria(string nome)
+        public static void AddCategoria(string nome)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -51,7 +51,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string AddSala(string nome, int colunas, int filas, Cinema cinema)
+        public static void AddSala(string nome, int colunas, int filas, Cinema cinema)
         {
             using (var db = new CinemaDbContext())
             {
@@ -61,7 +61,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string AddSessao(DateTime dataHora, decimal preco)
+        public static void AddSessao(DateTime dataHora, decimal preco)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -71,7 +71,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string AddFuncionario(string nome, string morada, decimal salario, string funcao)
+        public static void AddFuncionario(string nome, string morada, decimal salario, string funcao)
         {
             using (var db = new CinemaDbContext())
             {
@@ -81,7 +81,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string AddBilhete(string lugar)
+        public static void AddBilhete(string lugar)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -91,7 +91,7 @@ namespace Formulario_Principal.Controller
             }
         }
         
-        public static string UpdateCliente(Cliente cliente)
+        public static void UpdateCliente(Cliente cliente)
         {
             using (var db = new CinemaDbContext()) 
             {
@@ -100,7 +100,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string UpdateCinema(Cinema cinema)
+        public static void UpdateCinema(Cinema cinema)
         {
             using (var db = new CinemaDbContext())
             {
@@ -109,7 +109,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string UpdateFilme(Filme filme)
+        public static void UpdateFilme(Filme filme)
         {
             using (var db = new CinemaDbContext())
             {
@@ -118,7 +118,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string UpdateCategoria(Categoria categoria)
+        public static void UpdateCategoria(Categoria categoria)
         {
             using (var db = new CinemaDbContext())
             {
@@ -127,7 +127,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string UpdateSala(Sala sala)   
+        public static void UpdateSala(Sala sala)   
         {
             using (var db = new CinemaDbContext())
             {
@@ -136,7 +136,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string UpdateSessao(Sessao sessao)
+        public static void UpdateSessao(Sessao sessao)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -145,7 +145,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string UpdateFuncionario(Funcionario funcionario)
+        public static void UpdateFuncionario(Funcionario funcionario)
         {
             using (var db = new CinemaDbContext())
             {
@@ -154,7 +154,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string UpdateBilhete(Bilhete bilhete)
+        public static void UpdateBilhete(Bilhete bilhete)
         {
             using (var db = new CinemaDbContext())
             {
@@ -163,7 +163,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string RemoveCliente(Cliente cliente)
+        public static void RemoveCliente(Cliente cliente)
         {
             using (var db = new CinemaDbContext()) 
             {
@@ -172,7 +172,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string RemoveCinema(Cinema cinema)
+        public static void RemoveCinema(Cinema cinema)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -181,7 +181,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string RemoveFilme(Filme filme)
+        public static void RemoveFilme(Filme filme)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -190,7 +190,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string RemoveCategoria(Categoria categoria)
+        public static void RemoveCategoria(Categoria categoria)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -199,7 +199,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string RemoveSala(Sala sala)
+        public static void RemoveSala(Sala sala)
         {
             using (var db = new CinemaDbContext())
             {
@@ -208,7 +208,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string RemoveSessao(Sessao sessao)
+        public static void RemoveSessao(Sessao sessao)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -217,7 +217,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string RemoveFuncionario(Funcionario funcionario)
+        public static void RemoveFuncionario(Funcionario funcionario)
         {
             using (var db = new CinemaDbContext())
             {
@@ -226,7 +226,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static string RemoveBilhete(Bilhete bilhete)
+        public static void RemoveBilhete(Bilhete bilhete)
         {
             using (var db = new CinemaDbContext()) 
             { 
@@ -235,7 +235,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static List<Cliente> GetClientes(Cliente cliente)
+        public static List<Cliente> GetClientes()
         {
             using (var db = new CinemaDbContext())
             {
@@ -243,7 +243,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static List<Cinema> GetCinemas(Cinema cinema)
+        public static List<Cinema> GetCinemas()
         {
             using (var db = new CinemaDbContext())
             {
@@ -251,7 +251,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static List<Categoria> GetCategorias(Categoria categoria)
+        public static List<Categoria> GetCategorias()
         {
             using (var db = new CinemaDbContext())
             {
@@ -259,7 +259,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static List<Filme> GetFilmes(Filme filme)
+        public static List<Filme> GetFilmes()
         {
             using (var db = new CinemaDbContext())
             {
@@ -267,7 +267,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static List<Bilhete> GetBilhetes(Bilhete bilhete)
+        public static List<Bilhete> GetBilhetes()
         {
             using (var db = new CinemaDbContext())
             {
@@ -275,7 +275,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static List<Funcionario> GetFuncionarios(Funcionario funcionario)
+        public static List<Funcionario> GetFuncionarios()
         {
             using (var db = new CinemaDbContext())
             {
@@ -283,7 +283,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static List<Sala> GetSalas(Sala sala)
+        public static List<Sala> GetSalas()
         {
             using (var db = new CinemaDbContext())
             {
@@ -291,7 +291,7 @@ namespace Formulario_Principal.Controller
             }
         }
 
-        public static List<Sessao> GetSessoes(Sessao sessao)
+        public static List<Sessao> GetSessoes()
         {
             using (var db = new CinemaDbContext())
             {

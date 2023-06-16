@@ -1,4 +1,5 @@
 ﻿using Formulario_Principal.Controller;
+using Formulario_Principal.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,12 @@ namespace Formulario_Principal.Views
         private void btnAdicionarCategoria_Click(object sender, EventArgs e)
         {
             CinemaController.AddCategoria(tbNome.Text);
+        }
+
+        private void btnRemoverCategoria_Click(object sender, EventArgs e)
+        {
+            var categoria = (Categoria)listBoxCategoria.SelectedItem;
+            CinemaController.RemoveCategoria(categoria);
         }
 
         private void btnObterCategoria_Click(object sender, EventArgs e)

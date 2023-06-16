@@ -1,5 +1,6 @@
 ﻿using Formulario_Principal.Controller;
 using Formulario_Principal.Models;
+using Formulario_Principal.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,17 +22,20 @@ namespace Formulario_Principal.Views
 
         private void btnAdicionarFilme_Click(object sender, EventArgs e)
         {
-            CinemaController.AddFilme(tbNome.Text, DateTime.Parse(tbDuracao.Text));
+            var categoria = (Categoria)comboBoxCategorias.SelectedItem;
+            CinemaController.AddFilme(tbNome.Text, DateTime.Parse(tbDuracao.Text),categoria);
         }
 
         private void btnAlterarFilme_Click(object sender, EventArgs e)
         {
-            CinemaController.UpdateFilme();
+            var filme = (Filme)listBoxFilmes.SelectedItem;
+            CinemaController.UpdateFilme(filme);
         }
 
         private void btnRemoverFilme_Click(object sender, EventArgs e)
         {
-            CinemaController.RemoveFilme();
+            var filme = (Filme)listBoxFilmes.SelectedItem;
+            CinemaController.RemoveFilme(filme);
         }
 
         private void btnObterFilme_Click(object sender, EventArgs e)

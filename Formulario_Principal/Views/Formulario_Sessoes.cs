@@ -1,4 +1,5 @@
 ﻿using Formulario_Principal.Controller;
+using Formulario_Principal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Formulario_Principal.Models;
 
 namespace Formulario_Principal.Views
 {
@@ -20,17 +22,19 @@ namespace Formulario_Principal.Views
 
         private void btnAdicionarSessao_Click(object sender, EventArgs e)
         {
-            CinemaController.AddSessao(DateTime.Now, 10.00,2);
+            CinemaController.AddSessao(DateTime.Now, decimal.Parse(tbPreco.Text));
         }
 
         private void btnAlterarSessao_Click(object sender, EventArgs e)
         {
-            CinemaController.UpdateSessao();
+            var sessao = (Sessao)listBoxSessao.SelectedItem;
+            CinemaController.UpdateSessao(sessao);
         }
 
         private void btnRemoverSessao_Click(object sender, EventArgs e)
         {
-            CinemaController.RemoveSessao();
+            var sessao = (Sessao)listBoxSessao.SelectedItem;
+            CinemaController.RemoveSessao(sessao);
         }
 
         private void btnObterSessao_Click(object sender, EventArgs e)

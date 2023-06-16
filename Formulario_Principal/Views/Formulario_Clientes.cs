@@ -26,12 +26,14 @@ namespace Formulario_Principal.Views
 
         private void btnAlterarCliente_Click(object sender, EventArgs e)
         {
-            CinemaController.UpdateCliente();
+            var cliente = (Cliente)listBoxClientes.SelectedItem;
+            CinemaController.UpdateCliente(cliente);
         }
 
         private void btnRemoverCliente_Click(object sender, EventArgs e)
         {
-            CinemaController.RemoveCliente();
+            var cliente = (Cliente)listBoxClientes.SelectedItem;
+            CinemaController.RemoveCliente(cliente);
         }
 
         private void btnObterCliente_Click(object sender, EventArgs e)

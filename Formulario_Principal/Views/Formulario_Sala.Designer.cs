@@ -176,7 +176,7 @@
             // listBoxSalas
             // 
             this.listBoxSalas.FormattingEnabled = true;
-            this.listBoxSalas.Location = new System.Drawing.Point(604, 91);
+            this.listBoxSalas.Location = new System.Drawing.Point(599, 87);
             this.listBoxSalas.Name = "listBoxSalas";
             this.listBoxSalas.Size = new System.Drawing.Size(120, 95);
             this.listBoxSalas.TabIndex = 21;

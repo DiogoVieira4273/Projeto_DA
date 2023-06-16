@@ -33,6 +33,7 @@
             this.tbNome = new System.Windows.Forms.TextBox();
             this.listBoxCategoria = new System.Windows.Forms.ListBox();
             this.btnObterCategoria = new System.Windows.Forms.Button();
+            this.btnRemoverCategoria = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -79,11 +80,22 @@
             this.btnObterCategoria.UseVisualStyleBackColor = true;
             this.btnObterCategoria.Click += new System.EventHandler(this.btnObterCategoria_Click);
             // 
+            // btnRemoverCategoria
+            // 
+            this.btnRemoverCategoria.Location = new System.Drawing.Point(377, 224);
+            this.btnRemoverCategoria.Name = "btnRemoverCategoria";
+            this.btnRemoverCategoria.Size = new System.Drawing.Size(122, 25);
+            this.btnRemoverCategoria.TabIndex = 5;
+            this.btnRemoverCategoria.Text = "Remover Categoria";
+            this.btnRemoverCategoria.UseVisualStyleBackColor = true;
+            this.btnRemoverCategoria.Click += new System.EventHandler(this.btnRemoverCategoria_Click);
+            // 
             // Formulario_Categorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRemoverCategoria);
             this.Controls.Add(this.btnObterCategoria);
             this.Controls.Add(this.listBoxCategoria);
             this.Controls.Add(this.tbNome);
@@ -103,5 +115,6 @@
         private System.Windows.Forms.TextBox tbNome;
         private System.Windows.Forms.ListBox listBoxCategoria;
         private System.Windows.Forms.Button btnObterCategoria;
+        private System.Windows.Forms.Button btnRemoverCategoria;
     }
 }

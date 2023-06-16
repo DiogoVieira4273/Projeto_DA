@@ -32,7 +32,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAdicionarSessao = new System.Windows.Forms.Button();
-            this.listBoxSessao = new System.Windows.Forms.ListBox();
             this.btnAlterarSessao = new System.Windows.Forms.Button();
             this.btnRemoverSessao = new System.Windows.Forms.Button();
             this.btnObterSessao = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.listBoxSessao = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -83,14 +83,6 @@
             this.btnAdicionarSessao.Text = "Adicionar Sessao";
             this.btnAdicionarSessao.UseVisualStyleBackColor = true;
             this.btnAdicionarSessao.Click += new System.EventHandler(this.btnAdicionarSessao_Click);
-            // 
-            // listBoxSessao
-            // 
-            this.listBoxSessao.FormattingEnabled = true;
-            this.listBoxSessao.Location = new System.Drawing.Point(668, 24);
-            this.listBoxSessao.Name = "listBoxSessao";
-            this.listBoxSessao.Size = new System.Drawing.Size(120, 95);
-            this.listBoxSessao.TabIndex = 4;
             // 
             // btnAlterarSessao
             // 
@@ -191,6 +183,14 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Data";
             // 
+            // listBoxSessao
+            // 
+            this.listBoxSessao.FormattingEnabled = true;
+            this.listBoxSessao.Location = new System.Drawing.Point(668, 24);
+            this.listBoxSessao.Name = "listBoxSessao";
+            this.listBoxSessao.Size = new System.Drawing.Size(120, 95);
+            this.listBoxSessao.TabIndex = 4;
+            // 
             // Formulario_Sessoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,7 +226,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAdicionarSessao;
-        private System.Windows.Forms.ListBox listBoxSessao;
         private System.Windows.Forms.Button btnAlterarSessao;
         private System.Windows.Forms.Button btnRemoverSessao;
         private System.Windows.Forms.Button btnObterSessao;
@@ -239,5 +238,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ListBox listBoxSessao;
     }
 }

@@ -40,11 +40,11 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtMorada = new System.Windows.Forms.TextBox();
-            this.listBoxSessao = new System.Windows.Forms.ListBox();
-            this.listBoxFuncionario = new System.Windows.Forms.ListBox();
             this.btnAdicionarCinema = new System.Windows.Forms.Button();
+            this.listBoxFuncionario = new System.Windows.Forms.ListBox();
             this.btnObterFuncionarios = new System.Windows.Forms.Button();
             this.btnObterSessao = new System.Windows.Forms.Button();
+            this.listBoxSessao = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,22 +145,6 @@
             this.txtMorada.Size = new System.Drawing.Size(100, 20);
             this.txtMorada.TabIndex = 6;
             // 
-            // listBoxSessao
-            // 
-            this.listBoxSessao.FormattingEnabled = true;
-            this.listBoxSessao.Location = new System.Drawing.Point(12, 27);
-            this.listBoxSessao.Name = "listBoxSessao";
-            this.listBoxSessao.Size = new System.Drawing.Size(156, 134);
-            this.listBoxSessao.TabIndex = 8;
-            // 
-            // listBoxFuncionario
-            // 
-            this.listBoxFuncionario.FormattingEnabled = true;
-            this.listBoxFuncionario.Location = new System.Drawing.Point(12, 234);
-            this.listBoxFuncionario.Name = "listBoxFuncionario";
-            this.listBoxFuncionario.Size = new System.Drawing.Size(156, 134);
-            this.listBoxFuncionario.TabIndex = 9;
-            // 
             // btnAdicionarCinema
             // 
             this.btnAdicionarCinema.Location = new System.Drawing.Point(342, 188);
@@ -170,6 +154,14 @@
             this.btnAdicionarCinema.Text = "Adicionar Cinema";
             this.btnAdicionarCinema.UseVisualStyleBackColor = true;
             this.btnAdicionarCinema.Click += new System.EventHandler(this.btnAdicionarCinema_Click);
+            // 
+            // listBoxFuncionario
+            // 
+            this.listBoxFuncionario.FormattingEnabled = true;
+            this.listBoxFuncionario.Location = new System.Drawing.Point(12, 234);
+            this.listBoxFuncionario.Name = "listBoxFuncionario";
+            this.listBoxFuncionario.Size = new System.Drawing.Size(156, 134);
+            this.listBoxFuncionario.TabIndex = 9;
             // 
             // btnObterFuncionarios
             // 
@@ -190,6 +182,14 @@
             this.btnObterSessao.Text = "Obter Sessao";
             this.btnObterSessao.UseVisualStyleBackColor = true;
             this.btnObterSessao.Click += new System.EventHandler(this.btnObterSessao_Click);
+            // 
+            // listBoxSessao
+            // 
+            this.listBoxSessao.FormattingEnabled = true;
+            this.listBoxSessao.Location = new System.Drawing.Point(12, 27);
+            this.listBoxSessao.Name = "listBoxSessao";
+            this.listBoxSessao.Size = new System.Drawing.Size(156, 134);
+            this.listBoxSessao.TabIndex = 8;
             // 
             // Form1
             // 
@@ -232,11 +232,11 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtMorada;
-        private System.Windows.Forms.ListBox listBoxSessao;
-        private System.Windows.Forms.ListBox listBoxFuncionario;
         private System.Windows.Forms.Button btnAdicionarCinema;
+        private System.Windows.Forms.ListBox listBoxFuncionario;
         private System.Windows.Forms.Button btnObterFuncionarios;
         private System.Windows.Forms.Button btnObterSessao;
+        private System.Windows.Forms.ListBox listBoxSessao;
     }
 }
 

@@ -1,4 +1,6 @@
 ﻿using Formulario_Principal.Controller;
+using Formulario_Principal.Models;
+using Formulario_Principal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,17 +22,20 @@ namespace Formulario_Principal.Views
 
         private void btnAdicionarSala_Click(object sender, EventArgs e)
         {
-            CinemaController.AddSala(tbNome.Text, int.Parse(tbFilas.Text), int.Parse(tbColunas.Text));
+            var cinema = (Cinema)listBoxCinema.SelectedItem;
+            CinemaController.AddSala(tbNome.Text, int.Parse(tbFilas.Text), int.Parse(tbColunas.Text),cinema);
         }
 
         private void btnAlterarSala_Click(object sender, EventArgs e)
         {
-            CinemaController.UpdateSala();
+            var sala = (Sala)listBoxSalas.SelectedItem;
+            CinemaController.UpdateSala(sala);
         }
 
         private void btnRemoverSala_Click(object sender, EventArgs e)
         {
-            CinemaController.RemoveSala();
+            var sala = (Sala)listBoxSalas.SelectedItem;
+            CinemaController.RemoveSala(sala);
         }
 
         private void btnObterSala_Click(object sender, EventArgs e)

@@ -135,6 +135,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Formulario_Atendimento.resx">
+      <DependentUpon>Formulario_Atendimento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Formulario_Categorias.resx">
       <DependentUpon>Formulario_Categorias.cs</DependentUpon>
     </EmbeddedResource>

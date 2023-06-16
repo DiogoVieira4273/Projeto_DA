@@ -27,12 +27,14 @@ namespace Formulario_Principal.Views
 
         private void btnAlterarFuncionario_Click(object sender, EventArgs e)
         {
-            CinemaController.UpdateFuncionario();
+            var funcionario = (Funcionario)listBoxFuncionario.SelectedItem;
+            CinemaController.UpdateFuncionario(funcionario);
         }
 
         private void btnRemoverFuncionario_Click(object sender, EventArgs e)
         {
-            CinemaController.RemoveFuncionario();
+            var funcionario = (Funcionario)listBoxFuncionario.SelectedItem;
+            CinemaController.RemoveFuncionario(funcionario);
         }
     }
 }
