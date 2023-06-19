@@ -8,11 +8,11 @@ namespace Formulario_Principal.Models
 {
     public class Filme
     {
-        public int id;
-        public string Nome;
-        public DateTime Duracao;
-        public bool Activo;
-        public Categoria Categoria;
+        public int id { get; set; }
+        public string Nome { get; set; }
+        public DateTime Duracao { get; set; }
+        public bool Activo { get; set; }
+        public Categoria Categoria { get; set; }
 
         public Filme(string nome, DateTime duracao, Categoria categoria) 
         {

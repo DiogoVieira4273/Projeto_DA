@@ -8,9 +8,9 @@ namespace Formulario_Principal.Models
 {
     public class Bilhete
     {
-        public int id;
-        public string Lugar;
-        public bool Estado;
+        public int id {  get; set; }
+        public string Lugar { get; set; }
+        public bool Estado { get; set; }
 
         public Bilhete(string lugar)
         {

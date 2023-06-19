@@ -8,9 +8,9 @@ namespace Formulario_Principal.Models
 {
     public class Pessoa
     {
-        public int id;
-        public string Nome;
-        public string Morada;
+        public int id { get; set; }
+        public string Nome { get; set; }
+        public string Morada { get; set; }
 
         public Pessoa(string nome, string morada)
         {

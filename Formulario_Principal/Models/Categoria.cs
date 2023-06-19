@@ -9,9 +9,9 @@ namespace Formulario_Principal.Models
 {
     public class Categoria
     {
-        public int id;
-        public string Nome;
-        public bool Activa;
+        public int id {  get; set; }
+        public string Nome { get; set; }
+        public bool Activa { get; set; }
 
         public Categoria(string nome) 
         {

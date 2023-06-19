@@ -8,7 +8,7 @@ namespace Formulario_Principal.Models
 {
     public class Cliente : Pessoa
     {
-        public int NumeroFiscal;
+        public int NumeroFiscal {  get; set; }
 
         public Cliente(string nome, string morada, int numeroFiscal) : base(nome,morada) 
         {

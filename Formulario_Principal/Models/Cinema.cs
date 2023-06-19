@@ -8,10 +8,10 @@ namespace Formulario_Principal.Models
 {
     public class Cinema
     {
-        public int id;
-        public string Nome;
-        public string Morada;
-        public string Email;
+        public int id {  get; set; }
+        public string Nome { get; set; }
+        public string Morada { get; set; }
+        public string Email { get; set; }
 
         public Cinema(string nome, string morada, string email)
         {

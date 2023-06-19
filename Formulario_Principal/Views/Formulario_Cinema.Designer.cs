@@ -35,8 +35,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnRemoverCinema = new System.Windows.Forms.Button();
             this.listBoxCinema = new System.Windows.Forms.ListBox();
+            this.btnObterSala = new System.Windows.Forms.Button();
+            this.listBoxSalas = new System.Windows.Forms.ListBox();
+            this.btnObterCinema = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAlterarCinema
@@ -97,16 +99,6 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Nome";
             // 
-            // btnRemoverCinema
-            // 
-            this.btnRemoverCinema.Location = new System.Drawing.Point(398, 187);
-            this.btnRemoverCinema.Name = "btnRemoverCinema";
-            this.btnRemoverCinema.Size = new System.Drawing.Size(122, 26);
-            this.btnRemoverCinema.TabIndex = 28;
-            this.btnRemoverCinema.Text = "Remover Cinema";
-            this.btnRemoverCinema.UseVisualStyleBackColor = true;
-            this.btnRemoverCinema.Click += new System.EventHandler(this.btnRemoverCinema_Click);
-            // 
             // listBoxCinema
             // 
             this.listBoxCinema.FormattingEnabled = true;
@@ -115,13 +107,42 @@
             this.listBoxCinema.Size = new System.Drawing.Size(120, 95);
             this.listBoxCinema.TabIndex = 29;
             // 
+            // btnObterSala
+            // 
+            this.btnObterSala.Location = new System.Drawing.Point(624, 317);
+            this.btnObterSala.Name = "btnObterSala";
+            this.btnObterSala.Size = new System.Drawing.Size(95, 23);
+            this.btnObterSala.TabIndex = 39;
+            this.btnObterSala.Text = "Obter Sala";
+            this.btnObterSala.UseVisualStyleBackColor = true;
+            // 
+            // listBoxSalas
+            // 
+            this.listBoxSalas.FormattingEnabled = true;
+            this.listBoxSalas.Location = new System.Drawing.Point(608, 206);
+            this.listBoxSalas.Name = "listBoxSalas";
+            this.listBoxSalas.Size = new System.Drawing.Size(120, 95);
+            this.listBoxSalas.TabIndex = 38;
+            // 
+            // btnObterCinema
+            // 
+            this.btnObterCinema.Location = new System.Drawing.Point(606, 153);
+            this.btnObterCinema.Name = "btnObterCinema";
+            this.btnObterCinema.Size = new System.Drawing.Size(122, 26);
+            this.btnObterCinema.TabIndex = 44;
+            this.btnObterCinema.Text = "Obter Cinema";
+            this.btnObterCinema.UseVisualStyleBackColor = true;
+            this.btnObterCinema.Click += new System.EventHandler(this.btnObterCinema_Click);
+            // 
             // Formulario_Cinema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnObterCinema);
+            this.Controls.Add(this.btnObterSala);
+            this.Controls.Add(this.listBoxSalas);
             this.Controls.Add(this.listBoxCinema);
-            this.Controls.Add(this.btnRemoverCinema);
             this.Controls.Add(this.btnAlterarCinema);
             this.Controls.Add(this.txtMorada);
             this.Controls.Add(this.txtEmail);
@@ -145,7 +166,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnRemoverCinema;
         private System.Windows.Forms.ListBox listBoxCinema;
+        private System.Windows.Forms.Button btnObterSala;
+        private System.Windows.Forms.ListBox listBoxSalas;
+        private System.Windows.Forms.Button btnObterCinema;
     }
 }

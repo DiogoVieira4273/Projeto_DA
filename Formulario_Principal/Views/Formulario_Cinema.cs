@@ -30,5 +30,16 @@ namespace Formulario_Principal.Views
             var cinema = (Cinema)listBoxCinema.SelectedItem;
             CinemaController.RemoveCinema(cinema);
         }
+
+        private void btnObterCinema_Click(object sender, EventArgs e)
+        {
+            var cinema = CinemaController.GetCinemas();
+            listBoxCinema.DataSource = cinema;
+
+            if (cinema == null)
+            {
+                listBoxCinema.SelectedIndex = 0;
+            }
+        }
     }
 }

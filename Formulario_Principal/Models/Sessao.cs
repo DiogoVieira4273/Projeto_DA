@@ -8,9 +8,9 @@ namespace Formulario_Principal.Models
 {
     public class Sessao
     {
-        public int id;
-        public DateTime DataHora;
-        public decimal Preco;
+        public int id { get; set; }
+        public DateTime DataHora { get; set; }
+        public decimal Preco { get; set; }
 
         public Sessao(DateTime dataHora, decimal preco)
         {
