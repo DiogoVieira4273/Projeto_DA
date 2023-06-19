@@ -36,12 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRemoverCinema = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.listBoxCinema = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -113,54 +107,6 @@
             this.btnRemoverCinema.UseVisualStyleBackColor = true;
             this.btnRemoverCinema.Click += new System.EventHandler(this.btnRemoverCinema_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(420, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 27;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(412, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 26;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(412, 42);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 25;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(371, 140);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Morada";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(371, 90);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Email";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(371, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Nome";
-            // 
             // listBoxCinema
             // 
             this.listBoxCinema.FormattingEnabled = true;
@@ -176,12 +122,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.listBoxCinema);
             this.Controls.Add(this.btnRemoverCinema);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnAlterarCinema);
             this.Controls.Add(this.txtMorada);
             this.Controls.Add(this.txtEmail);
@@ -206,12 +146,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRemoverCinema;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ListBox listBoxCinema;
     }
 }
