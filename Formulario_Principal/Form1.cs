@@ -44,14 +44,32 @@ namespace Formulario_Principal
 
         private void sessõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Formulario_Atendimento formulario_Atendimento = new Formulario_Atendimento();
-            formulario_Atendimento.ShowDialog();
+            Formulario_Sessoes formulario_Sessoes = new Formulario_Sessoes();
+            formulario_Sessoes.ShowDialog();
         }
 
         private void funcionáriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Formulario_Funcionarios formulario_Funcionarios = new Formulario_Funcionarios();
             formulario_Funcionarios.ShowDialog();
+        }
+
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formulario_Categorias formulario_Categorias = new Formulario_Categorias();
+            formulario_Categorias.ShowDialog();
+        }
+
+        private void atendimentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formulario_Atendimento formulario_Atendimento = new Formulario_Atendimento();
+            formulario_Atendimento.ShowDialog();
+        }
+
+        private void salasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formulario_Sala formulario_Sala = new Formulario_Sala();
+            formulario_Sala.ShowDialog();
         }
 
         private void btnObterFuncionarios_Click(object sender, EventArgs e)

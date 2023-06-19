@@ -19,10 +19,5 @@ namespace Formulario_Principal.Models
             this.Morada = morada;
             this.Email = email;
         }
-
-        public override string ToString()
-        {
-            return "" + this.Nome + "" + this.Morada + "" + this.Email + "".ToString();
-        }
     }
 }

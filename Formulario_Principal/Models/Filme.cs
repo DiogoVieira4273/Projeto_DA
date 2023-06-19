@@ -20,10 +20,5 @@ namespace Formulario_Principal.Models
             this.Duracao = duracao;
             this.Categoria = categoria;
         }
-
-        public override string ToString()
-        {
-            return "" + this.Nome + "" + this.Duracao + "" + this.Categoria + "".ToString();
-        }
     }
 }

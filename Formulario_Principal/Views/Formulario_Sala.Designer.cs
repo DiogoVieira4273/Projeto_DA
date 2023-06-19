@@ -45,6 +45,7 @@
             this.btnRemoverSala = new System.Windows.Forms.Button();
             this.listBoxSalas = new System.Windows.Forms.ListBox();
             this.btnObterSala = new System.Windows.Forms.Button();
+            this.listBoxCinema = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -191,11 +192,20 @@
             this.btnObterSala.UseVisualStyleBackColor = true;
             this.btnObterSala.Click += new System.EventHandler(this.btnObterSala_Click);
             // 
+            // listBoxCinema
+            // 
+            this.listBoxCinema.FormattingEnabled = true;
+            this.listBoxCinema.Location = new System.Drawing.Point(599, 262);
+            this.listBoxCinema.Name = "listBoxCinema";
+            this.listBoxCinema.Size = new System.Drawing.Size(120, 95);
+            this.listBoxCinema.TabIndex = 30;
+            // 
             // Formulario_Sala
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBoxCinema);
             this.Controls.Add(this.btnObterSala);
             this.Controls.Add(this.listBoxSalas);
             this.Controls.Add(this.btnRemoverSala);
@@ -239,5 +249,6 @@
         private System.Windows.Forms.Button btnRemoverSala;
         private System.Windows.Forms.ListBox listBoxSalas;
         private System.Windows.Forms.Button btnObterSala;
+        private System.Windows.Forms.ListBox listBoxCinema;
     }
 }

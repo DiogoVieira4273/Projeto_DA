@@ -25,7 +25,7 @@ namespace Formulario_Principal.Views
             var cinema = (Cinema)listBoxCinema.SelectedItem;
             CinemaController.AddSala(tbNome.Text, int.Parse(tbFilas.Text), int.Parse(tbColunas.Text),cinema);
         }
-
+        
         private void btnAlterarSala_Click(object sender, EventArgs e)
         {
             var sala = (Sala)listBoxSalas.SelectedItem;
