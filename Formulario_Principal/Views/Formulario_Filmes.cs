@@ -42,6 +42,11 @@ namespace Formulario_Principal.Views
         {
             var filme = CinemaController.GetFilmes();
             listBoxFilmes.DataSource = filme;
+
+            if (filme == null)
+            {
+                listBoxFilmes.SelectedIndex = 0;
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

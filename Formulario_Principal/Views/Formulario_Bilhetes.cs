@@ -27,6 +27,11 @@ namespace Formulario_Principal.Views
         {
             var bilhete = CinemaController.GetBilhetes();
             listBoxBilhetes.DataSource = bilhete;
+
+            if (bilhete == null)
+            {
+                listBoxBilhetes.SelectedIndex = 0;
+            }
         }
     }
 }

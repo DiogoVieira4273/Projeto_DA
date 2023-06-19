@@ -40,6 +40,11 @@ namespace Formulario_Principal.Views
         {
             var cliente = CinemaController.GetClientes();
             listBoxClientes.DataSource = cliente;
+
+            if (cliente == null)
+            {
+                listBoxClientes.SelectedIndex = 0;
+            }
         }
     }
 }

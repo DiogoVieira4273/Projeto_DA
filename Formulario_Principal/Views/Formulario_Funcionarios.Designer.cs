@@ -217,6 +217,7 @@
             this.btnObterFuncionarios.TabIndex = 24;
             this.btnObterFuncionarios.Text = "Obter Funcionarios";
             this.btnObterFuncionarios.UseVisualStyleBackColor = true;
+            this.btnObterFuncionarios.Click += new System.EventHandler(this.btnObterFuncionarios_Click);
             // 
             // listBoxFuncionario
             // 

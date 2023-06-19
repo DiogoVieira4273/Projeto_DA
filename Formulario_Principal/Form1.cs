@@ -1,4 +1,5 @@
 ﻿using Formulario_Principal.Controller;
+using Formulario_Principal.Models;
 using Formulario_Principal.Views;
 using System;
 using System.Collections.Generic;
@@ -76,12 +77,22 @@ namespace Formulario_Principal
         {
             var funcionario = CinemaController.GetFuncionarios();
             listBoxFuncionario.DataSource = funcionario;
+
+            if (funcionario == null)
+            {
+                listBoxFuncionario.SelectedIndex = 0;
+            }
         }
 
         private void btnObterSessao_Click(object sender, EventArgs e)
         {
             var sessao = CinemaController.GetSessoes();
             listBoxSessao.DataSource = sessao;
+
+            if (sessao == null)
+            {
+                listBoxSessao.SelectedIndex = 0;
+            }
         }
     }
 }

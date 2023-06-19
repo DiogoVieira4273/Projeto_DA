@@ -36,5 +36,16 @@ namespace Formulario_Principal.Views
             var funcionario = (Funcionario)listBoxFuncionario.SelectedItem;
             CinemaController.RemoveFuncionario(funcionario);
         }
+
+        private void btnObterFuncionarios_Click(object sender, EventArgs e)
+        {
+            var funcionario = CinemaController.GetFuncionarios();
+            listBoxFuncionario.DataSource = funcionario;
+
+            if (funcionario == null)
+            {
+                listBoxFuncionario.SelectedIndex = 0;
+            }
+        }
     }
 }

@@ -42,6 +42,11 @@ namespace Formulario_Principal.Views
         {
             var sala = CinemaController.GetSalas();
             listBoxSalas.DataSource = sala;
+
+            if (sala == null)
+            {
+                listBoxSalas.SelectedIndex = 0;
+            }
         }
     }
 }

@@ -147,6 +147,7 @@
             this.Controls.Add(this.listBoxBilhetes);
             this.Name = "Formulario_Atendimento";
             this.Text = "Formulario_Atendimento";
+            this.Load += new System.EventHandler(this.Formulario_Atendimento_Load);
             this.ResumeLayout(false);
 
         }

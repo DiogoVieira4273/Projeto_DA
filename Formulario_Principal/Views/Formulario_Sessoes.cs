@@ -41,6 +41,11 @@ namespace Formulario_Principal.Views
         {
             var sessao = CinemaController.GetSessoes();
             listBoxSessao.DataSource = sessao;
+
+            if (sessao == null)
+            {
+                listBoxSessao.SelectedIndex = 0;
+            }
         }
     }
 }

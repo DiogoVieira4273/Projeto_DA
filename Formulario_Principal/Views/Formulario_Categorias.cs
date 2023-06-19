@@ -34,6 +34,11 @@ namespace Formulario_Principal.Views
         {
             var categoria = CinemaController.GetCategorias();
             listBoxCategoria.DataSource = categoria;
+
+            if (categoria == null)
+            {
+                listBoxCategoria.SelectedIndex = 0;
+            }
         }
     }
 }
